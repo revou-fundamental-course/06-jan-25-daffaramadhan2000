@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websiteku</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <!-- Section Header -->
+    <header>
+        <div class="container">
+            <h1>Websiteku</h1>
+            <nav>
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#headquarter">Our Profile</a></li>
+                    <li><a href="#form">Message us</a></li>
+                    <li><a href="#portofolio">portofolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Banner Image -->
+    <section id="banner" class="banner">
+        <div class="banner-content">
+            <h2>Hi <span id="nama"></span> Welcome to Websiteku!</h2>
+            <p>Ayo tumbuh bersama kami!</p>
+        </div>
+    </section>
+
+    <!-- Section Our Headquarter -->
+    <section id="headquarter" class="headquarter">
+        <h2>Our Headquarter</h2>
+        <p>kita berada di:</p>
+        <div class="container">
+            <div class="circle"style="background-image: url('assets/jakarta.jpg');"></div>
+            <div class="circle"style="background-image: url('assets/bandung.jpg');"></div>
+            <div class="circle"style="background-image: url('assets/surabaya.jpg');"></div>
+    </section>
+
+    <!-- Section Form -->
+    <section id="form" class="contact-form">
+        
+        <div class="container">
+            <h2>Message Us</h2>
+            <form name="message-form" onsubmit="return validateForm()">
+                
+                nama:
+                <input placeholder="Nama" type="text" name="full-name" id="name-input" required>
+
+                <label for="date">Tanggal Lahir:</label>
+                <input type="date" id="tanggal_lahir" name="birth-date" required>
+
+                jenis kelamin:<br>
+                <input type="radio" id="male" name="gender" value="Laki laki" required>
+                <label for="male">Laki laki</label><br>
+                <input type="radio" id="female" name="gender" value="perempuan" required>
+                <label for="female">Perempuan</label><br>
+
+                <br>
+                pesan:
+                <textarea placeholder="pesan" type="text" name="messages">
+                </textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+            <div style="text-align:center;">
+            
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>messages: <span id="sender-messages"></span></p>
+               
+            </div>
+        </div>
+      
+    </section>
+    
+    <script src="js/scrpt.js"></script>
+</body>
+</html>

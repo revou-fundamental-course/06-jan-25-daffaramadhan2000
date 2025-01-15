@@ -1,0 +1,150 @@
+/* General style >*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Section >*/
+header {
+    background-color: #76517e;
+    color: rgb(44, 29, 51);
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: rgb(44, 29, 51);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner Section >*/
+.banner {
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(44, 29, 51);
+    text-align: center;
+    padding: 150px 0;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+/* Our Headquarter Section >*/
+.headquarter {
+    background-color: #76517e;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.headquarter h2 {
+    font-size: 2.5rem;
+    color: rgb(44, 29, 51);
+
+}
+
+.headquarter p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    color: rgb(44, 29, 51);
+}
+
+.headquarter address {
+    font-style: normal;
+    font-size: 1.2rem;
+    color: rgb(44, 29, 51);
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 0 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+#headquarter .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Form Section >*/
+.contact-form {
+    padding: 50px 0;
+    background-color:  #deade9;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    /* display: block; */
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],.contact-form input[type="date"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(80, 8, 56, 0.333);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #a1759f;
+}
